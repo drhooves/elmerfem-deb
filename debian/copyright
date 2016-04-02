@@ -1,0 +1,146 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: elmerfem
+Upstream-Contact: elmeradm@csc.fi
+Source: https://github.com/ElmerCSC/elmerfem
+
+Files:     *
+Copyright: 1995, CSC - IT Center for Science Ltd.
+License:   GPL-2+
+ This program is free software; you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation; either version 2 of the License, or (at your
+ option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this package; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
+
+Files:     debian/
+Copyright: 2016, Markus Hovorka <m.hovorka@live.de>
+License:   GPL-2+
+ This program is free software; you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation; either version 2 of the License, or (at your
+ option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this package; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
+
+Files:     ElmerGUI/*
+Copyright: 1995, CSC - IT Center for Science Ltd.
+License:   GPL-2+ with OpenCASCADE exception
+ This program is free software; you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation; either version 2 of the License, or (at your
+ option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
+ .
+ As an exception to the conditions of Gnu Public Licence version 2
+ (GPL-2), CSC - IT Center for Science Ltd., the copyright holder of
+ ElmerGUI, hereby grants you the right to link the source code within
+ this directory against the library of
+ .
+ "Open CASCADE" v. 6.3 by Open CASCADE S.A.S.
+ .
+ You may also link ElmerGUI against any later versions of Open CASCADE,
+ provided that the lincense of Open CASCADE permits such usage. The
+ licence terms for the Open CASCADE library can be found from
+ .
+ http://www.opencascade.org/
+ .
+ You should have received a copy of the GNU General Public License along
+ with this package; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
+
+Files:     umfpack/*
+Copyright: 1995-2005 by Timothy A. Davis
+License:   LGPL-2.1+
+ This library is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License as published
+ by the Free Software Foundation; either version 2.1 of the License, or
+ (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ 02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU Lesser General Public
+ License version 2.1 can be found in the file
+ `/usr/share/common-licenses/LGPL-2.1'.
+
+Files:     misc/tetgen_plugin/*
+Copyright: 2006, Hang Si <si@wias-berlin.de>
+License:   custom-license
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the
+ "Software"), to deal in the Software without restriction, including
+ without limitation the rights to use, copy, modify, merge, publish,
+ distribute, sublicense and/or sell copies of the Software, and to permit
+ persons to whom the Software is furnished to do so, subject to the
+ following conditions:
+ .
+ Distribution of modified versions of this code is permissible UNDER THE
+ CONDITION THAT THIS CODE AND ANY MODIFICATIONS MADE TO IT IN THE SAME
+ SOURCE FILES tetgen.h AND tetgen.cxx REMAIN UNDER COPYRIGHT OF THE
+ ORIGINAL AUTHOR, BOTH SOURCE AND OBJECT CODE ARE MADE FREELY AVAILABLE
+ WITHOUT CHARGE, AND CLEAR NOTICE IS GIVEN OF THE MODIFICATIONS.
+ .
+ Distribution of this code for any commercial purpose is permissible ONLY
+ BY DIRECT ARRANGEMENT WITH THE COPYRIGHT OWNER.
+ .
+ The above copyright notice and this permission notice shall be included
+ in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Files:     elmergrid/src/metis/*
+Copyright: 1997, Regents of the University of Minnesota
+License:   custom-license
+ Our policy regarding the distribution of METIS with third-party
+ applications is as follows:
+ .
+     *  Non-commercial applications
+       METIS can be freely distributed provided that:
+           o Proper references are included.
+           o The original documentation and copyright notice is included.
+     * Commercial applications
+       METIS can be freely distributed provided that:
+           o Proper references are included.
+           o The original documentation and copyright notice is included.
+           o METIS is a relatively small portion of the overall application.

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Elmer
+Comment=Elmer FEA software
+Exec=ElmerGUI
+Icon=elmergui
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Science;
+Keywords=Physics;Engineering;NumericalComputing;NumericalSimulations;FEM;

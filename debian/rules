@@ -1,0 +1,34 @@
+#!/usr/bin/make -f
+# You must remove unused comment lines for the released package.
+#export DH_VERBOSE = 1
+#export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+#export DEB_CFLAGS_MAINT_APPEND  = -Wall -pedantic
+#export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+export DH_VERBOSE = 1
+export DEB_BUILD_MAINT_OPTIONS = hardening=-all
+
+%:
+	dh $@ --parallel
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-DCMAKE_BUILD_TYPE:STRING=Release \
+		-DCMAKE_INSTALL_PREFIX:PATH=/usr \
+		-DELMER_SOLVER_HOME:PATH=/usr/share/elmersolver \
+		-DWITH_MPI:BOOL=TRUE \
+		-DWITH_ELMERPOST:BOOL=TRUE \
+		-DWITH_ELMERGUI:BOOL=TRUE \
+		-DWITH_ELMERGUILOGGER:BOOL=TRUE \
+		-DWITH_QWT:BOOL=TRUE \
+		-DWITH_VTK:BOOL=TRUE \
+		-DWITH_OCC:BOOL=TRUE \
+		-DWITH_PARAVIEW:BOOL=TRUE \
+		-DWITH_Hypre:BOOL=TRUE \
+		-DWITH_Mumps:BOOL=TRUE \
+		-Wno-dev
+
+override_dh_auto_test:
+	OMPI_MCA_plm_rsh_agent=/bin/false make -C ./obj-* test
+
+override_dh_clean:
+	dh_clean -Xautom4te.cache

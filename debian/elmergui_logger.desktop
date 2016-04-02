@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Elmer logger
+Comment=Elmer FEA software log window
+Exec=ElmerGUIlogger
+Icon=elmergui
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Science;
+Keywords=Physics;Engineering;NumericalComputing;NumericalSimulations;FEM;
