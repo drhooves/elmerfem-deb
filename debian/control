@@ -3,14 +3,13 @@ Section: science
 Priority: extra
 Maintainer: Markus Hovorka <m.hovorka@live.de>
 Build-Depends: debhelper (>=9), dh-exec, quilt, cmake, gfortran,
- libarpack2-dev, liblapack-dev, libblas-dev,
- libhypre-dev, libparmetis-dev, libmumps-dev, mpi-default-dev, mpi-default-bin,
- libqt4-dev, libqt4-opengl-dev, libqwt-dev, libvtk-java, libvtk5-qt4-dev,
- libgl1-mesa-dev | libgl-dev, libglu1-mesa-dev | libglu-dev,
- tk8.5-dev, tcl8.5-dev,
- liboce-modeling-dev,
- mpi-default-dev
-Standards-Version: 3.9.6
+ liblapack-dev, libblas-dev,
+ mpi-default-dev, mpi-default-bin,
+ libhypre-dev, libmumps-dev, libparmetis-dev,
+ libqt4-dev, libqt4-opengl-dev, libqwt-dev, tk8.5-dev, tcl8.5-dev,
+ libvtk-java, libvtk5-qt4-dev, tcl-vtk, python-vtk,
+ liboce-modeling-dev
+Standards-Version: 3.9.7
 Homepage: https://github.com/ElmerCSC/elmerfem
 
 Package: elmerfem
