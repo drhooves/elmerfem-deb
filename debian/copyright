@@ -6,56 +6,14 @@ Source: https://github.com/ElmerCSC/elmerfem
 Files:     *
 Copyright: 1995, CSC - IT Center for Science Ltd.
 License:   GPL-2+
- This program is free software; you can redistribute it and/or modify it
- under the terms of the GNU General Public License as published by the
- Free Software Foundation; either version 2 of the License, or (at your
- option) any later version.
- .
- This program is distributed in the hope that it will be useful, but
- WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- General Public License for more details.
- .
- You should have received a copy of the GNU General Public License along
- with this package; if not, write to the Free Software Foundation, Inc.,
- 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
- .
- On Debian systems, the full text of the GNU General Public License
- version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
 
-Files:     debian/
+Files:     debian/*
 Copyright: 2016, Markus Hovorka <m.hovorka@live.de>
 License:   GPL-2+
- This program is free software; you can redistribute it and/or modify it
- under the terms of the GNU General Public License as published by the
- Free Software Foundation; either version 2 of the License, or (at your
- option) any later version.
- .
- This program is distributed in the hope that it will be useful, but
- WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- General Public License for more details.
- .
- You should have received a copy of the GNU General Public License along
- with this package; if not, write to the Free Software Foundation, Inc.,
- 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
- .
- On Debian systems, the full text of the GNU General Public License
- version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
 
 Files:     ElmerGUI/*
 Copyright: 1995, CSC - IT Center for Science Ltd.
 License:   GPL-2+ with OpenCASCADE exception
- This program is free software; you can redistribute it and/or modify it
- under the terms of the GNU General Public License as published by the
- Free Software Foundation; either version 2 of the License, or (at your
- option) any later version.
- .
- This program is distributed in the hope that it will be useful, but
- WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
- General Public License for more details.
- .
  As an exception to the conditions of Gnu Public Licence version 2
  (GPL-2), CSC - IT Center for Science Ltd., the copyright holder of
  ElmerGUI, hereby grants you the right to link the source code within
@@ -68,13 +26,6 @@ License:   GPL-2+ with OpenCASCADE exception
  licence terms for the Open CASCADE library can be found from
  .
  http://www.opencascade.org/
- .
- You should have received a copy of the GNU General Public License along
- with this package; if not, write to the Free Software Foundation, Inc.,
- 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
- .
- On Debian systems, the full text of the GNU General Public License
- version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
 
 Files:     umfpack/*
 Copyright: 1995-2005 by Timothy A. Davis
@@ -100,7 +51,7 @@ License:   LGPL-2.1+
 
 Files:     misc/tetgen_plugin/*
 Copyright: 2006, Hang Si <si@wias-berlin.de>
-License:   custom-license
+License:   custom-tetgen-license
  Permission is hereby granted, free of charge, to any person obtaining a
  copy of this software and associated documentation files (the
  "Software"), to deal in the Software without restriction, including
@@ -131,7 +82,7 @@ License:   custom-license
 
 Files:     elmergrid/src/metis/*
 Copyright: 1997, Regents of the University of Minnesota
-License:   custom-license
+License:   custom-metis-license
  Our policy regarding the distribution of METIS with third-party
  applications is as follows:
  .
@@ -144,3 +95,21 @@ License:   custom-license
            o Proper references are included.
            o The original documentation and copyright notice is included.
            o METIS is a relatively small portion of the overall application.
+
+License:   GPL-2+
+ This program is free software; you can redistribute it and/or modify it
+ under the terms of the GNU General Public License as published by the
+ Free Software Foundation; either version 2 of the License, or (at your
+ option) any later version.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this package; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 2 can be found in the file `/usr/share/common-licenses/GPL-2'.
