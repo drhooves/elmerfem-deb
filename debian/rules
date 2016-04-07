@@ -6,29 +6,31 @@
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 export DH_VERBOSE = 1
 export DEB_BUILD_MAINT_OPTIONS = hardening=-all
+export OMPI_MCA_plm_rsh_agent=/bin/false
 
 %:
-	dh $@ --parallel
+	dh $@
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
-		-DCMAKE_BUILD_TYPE:STRING=Release \
-		-DCMAKE_INSTALL_PREFIX:PATH=/usr \
-		-DELMER_SOLVER_HOME:PATH=/usr/share/elmersolver \
-		-DWITH_MPI:BOOL=TRUE \
-		-DWITH_ELMERPOST:BOOL=TRUE \
-		-DWITH_ELMERGUI:BOOL=TRUE \
-		-DWITH_ELMERGUILOGGER:BOOL=TRUE \
-		-DWITH_QWT:BOOL=TRUE \
-		-DWITH_VTK:BOOL=TRUE \
-		-DWITH_OCC:BOOL=TRUE \
-		-DWITH_PARAVIEW:BOOL=TRUE \
-		-DWITH_Hypre:BOOL=TRUE \
-		-DWITH_Mumps:BOOL=TRUE \
+		-DWITH_ELMERPOST=TRUE \
+		-DWITH_ELMERGUI=TRUE \
+		-DWITH_ELMERGUILOGGER=TRUE \
+		-DWITH_QWT=TRUE \
+		-DWITH_VTK=TRUE \
+		-DWITH_OCC=TRUE \
+		-DWITH_PARAVIEW=TRUE \
+		-DWITH_MPI=TRUE \
+		-DWITH_Hypre=TRUE \
+		-DWITH_Mumps=TRUE \
 		-Wno-dev
 
-override_dh_auto_test:
-	OMPI_MCA_plm_rsh_agent=/bin/false make -C ./obj-* test
+override_dh_auto_build:
+	dh_auto_build --parallel
 
 override_dh_clean:
 	dh_clean -Xautom4te.cache
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod 0644 ./debian/elmerfem/usr/share/icons/hicolor/32x32/apps/elmergui.png
