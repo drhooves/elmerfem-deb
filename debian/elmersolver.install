@@ -1,0 +1,10 @@
+usr/bin/ElmerSolver_mpi
+usr/bin/elmerf90
+usr/bin/elmerld
+usr/bin/Mesh2D
+usr/bin/ViewFactors
+usr/bin/GebhardtFactors
+usr/bin/matc
+
+usr/lib/elmersolver
+usr/share/elmersolver

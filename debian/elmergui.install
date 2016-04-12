@@ -1,3 +1,7 @@
 #!/usr/bin/dh-exec
-debian/*.desktop usr/share/applications
+debian/elmergui.desktop usr/share/applications
 ElmerGUI/Application/icons/Mesh3D.png => usr/share/icons/hicolor/32x32/apps/elmergui.png
+
+usr/bin/ElmerGUI
+usr/lib/ElmerGUI
+usr/share/ElmerGUI

@@ -31,6 +31,11 @@ override_dh_auto_build:
 override_dh_clean:
 	dh_clean -Xautom4te.cache
 
+override_dh_install:
+	dh_install --list-missing \
+		-Xlicense_texts \
+		-Xlicense.terms
+
 override_dh_fixperms:
 	dh_fixperms
-	chmod 0644 ./debian/elmerfem/usr/share/icons/hicolor/32x32/apps/elmergui.png
+	chmod 0644 ./debian/*/usr/share/icons/hicolor/32x32/apps/elmergui.png
