@@ -1,7 +1,6 @@
 #!/usr/bin/make -f
 export DH_VERBOSE = 1
 export DEB_BUILD_MAINT_OPTIONS = hardening=-all
-export OMPI_MCA_plm_rsh_agent=/bin/false
 
 %:
 	dh $@
