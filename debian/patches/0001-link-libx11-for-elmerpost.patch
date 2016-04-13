@@ -1,0 +1,30 @@
+From: Markus Hovorka <m.hovorka@live.de>
+Date: Wed, 13 Apr 2016 20:22:02 +0200
+Subject: link-libx11-for-elmerpost
+
+---
+ post/src/CMakeLists.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/post/src/CMakeLists.txt b/post/src/CMakeLists.txt
+index 4d7dafd..1ca559a 100644
+--- a/post/src/CMakeLists.txt
++++ b/post/src/CMakeLists.txt
+@@ -63,7 +63,7 @@ ENDIF()
+ add_executable(ElmerPost ${ElmerPost_SRCS})
+ 
+ target_link_libraries(ElmerPost camera elements module objects visuals graphics
+-  glaux ${OPENGL_LIBRARIES} ${TCL_LIBRARY} ${TK_LIBRARY} matc m)
++  glaux ${OPENGL_LIBRARIES} ${TCL_LIBRARY} ${TK_LIBRARY} matc m X11)
+ 
+ IF(NOT(WIN32))
+   SET_TARGET_PROPERTIES(ElmerPost PROPERTIES INSTALL_RPATH ${ELMERSOLVER_RPATH_STRING})
+@@ -84,7 +84,7 @@ IF(NOT(WIN32))
+ 
+   add_executable(QueryGLXExt ${QueryGLXExt_SRCS})
+ 
+-  target_link_libraries(QueryGLXExt ${OPENGL_LIBRARIES})
++  target_link_libraries(QueryGLXExt ${OPENGL_LIBRARIES} X11)
+ 
+   install(TARGETS QueryGLXExt DESTINATION bin)
+ ENDIF(NOT(WIN32))
