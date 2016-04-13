@@ -5,8 +5,8 @@ Maintainer: Markus Hovorka <m.hovorka@live.de>
 Build-Depends: debhelper (>=9), dh-exec, quilt, cmake, gfortran,
  liblapack-dev, libblas-dev,
  mpi-default-dev, mpi-default-bin,
- libhypre-dev, libmumps-dev, libparmetis-dev,
- libqt4-dev, libqt4-opengl-dev, libqwt-dev, tk8.5-dev, tcl8.5-dev,
+ libhypre-dev, libmumps-dev, libmetis-dev, libparmetis-dev,
+ libqt4-dev, libqt4-opengl-dev, libqwt-dev, tk8.4-dev, tcl8.4-dev,
  libvtk-java, libvtk5-qt4-dev, tcl-vtk, python-vtk,
  liboce-modeling-dev
 Standards-Version: 3.9.7
