@@ -16,8 +16,8 @@ Package: elmersolver
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}, mpi-default-bin
-Conflicts: elmer, elmer-common, elmer-dbg, libelmer-dev,
- libelmersolver-6.1, libelmersolver-dbg
+Replaces: elmer, elmer-common, elmer-dbg, libelmer-dev,
+ libelmersolver-6.1, libelmersolver-dbg, elmerfem, elmerfem-csc
 Description: Solver of Elmer incl. matc, Mesh2D
  Elmer is a finite element software package for the solution of partial
  differential equations. Elmer can deal with a great number of different
@@ -39,8 +39,8 @@ Package: elmergrid
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Conflicts: elmer, elmer-common, elmer-dbg, libelmer-dev,
- libelmersolver-6.1, libelmersolver-dbg
+Replaces: elmer, elmer-common, elmer-dbg, libelmer-dev,
+ libelmersolver-6.1, libelmersolver-dbg, elmerfem, elmerfem-csc
 Description: Mesh generation and manipulation
  Elmer is a finite element software package for the solution of partial
  differential equations. Elmer can deal with a great number of different
@@ -61,8 +61,8 @@ Package: elmergui
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}, elmersolver, elmergrid
-Conflicts: elmer, elmer-common, elmer-dbg, libelmer-dev,
- libelmersolver-6.1, libelmersolver-dbg
+Replaces: elmer, elmer-common, elmer-dbg, libelmer-dev,
+ libelmersolver-6.1, libelmersolver-dbg, elmerfem, elmerfem-csc
 Description: Graphical user interface for Elmer
  Elmer is a finite element software package for the solution of partial
  differential equations. Elmer can deal with a great number of different
@@ -88,8 +88,8 @@ Package: elmerguilogger
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}, elmergui
-Conflicts: elmer, elmer-common, elmer-dbg, libelmer-dev,
- libelmersolver-6.1, libelmersolver-dbg
+Replaces: elmer, elmer-common, elmer-dbg, libelmer-dev,
+ libelmersolver-6.1, libelmersolver-dbg, elmerfem, elmerfem-csc
 Description: Data logger for ElmerGUI
  Elmer is a finite element software package for the solution of partial
  differential equations. Elmer can deal with a great number of different
@@ -105,8 +105,8 @@ Package: elmerpost
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}, elmersolver
-Conflicts: elmer, elmer-common, elmer-dbg, libelmer-dev,
- libelmersolver-6.1, libelmersolver-dbg
+Replaces: elmer, elmer-common, elmer-dbg, libelmer-dev,
+ libelmersolver-6.1, libelmersolver-dbg, elmerfem, elmerfem-csc
 Description: Old (discontinued) user interface for Elmer
  Elmer is a finite element software package for the solution of partial
  differential equations. Elmer can deal with a great number of different
