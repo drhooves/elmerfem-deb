@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=Elmer logger
+Name=ElmerGUI Logger
 Comment=Elmer FEA software log window
 Exec=ElmerGUIlogger
 Icon=elmergui
