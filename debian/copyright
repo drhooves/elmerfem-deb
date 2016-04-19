@@ -14,10 +14,10 @@ License:   GPL-2+
 Files:     ElmerGUI/*
 Copyright: 1995, CSC - IT Center for Science Ltd.
 License:   GPL-2+ with OpenCASCADE exception
- As an exception to the conditions of Gnu Public License version 2
- (GPL-2), CSC - IT Center for Science Ltd., the copyright holder of
- ElmerGUI, hereby grants you the right to link the source code within
- this directory against the library of
+ As an exception to the conditions of GNU General Public License
+ version 2 (GPL-2), CSC - IT Center for Science Ltd., the copyright
+ holder of ElmerGUI, hereby grants you the right to link the source
+ code within this directory against the library of
  .
  "Open CASCADE" v. 6.3 by Open CASCADE S.A.S.
  .
